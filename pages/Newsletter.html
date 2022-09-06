@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Newsletter</title>
+</head>
+<body>
+    <!-- iNICIO DE ENCABEZADO -->
+    <header id="top">
+        <a href="../index.html"><img class="top__logo" src="../Images/Logo.png" alt="Logo"></a>
+        <nav class="barra_menu">
+            <ul class="menu">
+                <li><A HREF="../index.html">INICIO </A></li>
+                <li><a href="../pages/estrenos.html">ESTRENOS</a></li>
+                <li><a href="../pages/galeria.html">GALERIA</a></li>
+                <li><a href="../pages/bandasonora.html">BANDA SONORA</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN DEL ENCABEZADO -->   
+    <!-- INICIO DE SECCION PRINCiPAL -->
+    <Section class="fondo">
+        <div id="newsletter">
+            <h1 class="encabezado">Suscribete a nuestro Newsletter</h1>
+            <p class="reseña">Si te gusta tanto como a nosotros el maravillos mundo del cinefilo, sin dudoas tenes que suscribirte a nuestra web</p>
+            <p class="reseña">recibiras todos los meses la mejor selección de peliculas clasiscas y premiadas para ver, como todos los estrenes y el detras de bambalinas de todas las nuevas producciones</p>
+        </div>
+        <form action="">
+            <fieldset class="formulario">
+                <legend><b>Registrate</b></legend>
+
+                <div class="id">
+                    <label for="nombre">NOMBRE:</label>
+                    <input id= nombre type="text" placeholder="NOMBRE">
+                    <label for="apellido" >APELLIDO:</label>
+                    <input id=apellido type="text" placeholder="APELLIDO">
+
+                </div>
+                <div class="correo">
+                    <label for="email">CORREO ELECTORNICO:</label>
+                    <input id="email"type="email" placeholder="CORREO ELECTRONICO">    
+                </div>
+                <br>
+                <fieldset class="contenedor">
+                    <legend><b>¿Que informacion te gustaria recibir?</b></legend> 
+                    <br>
+                    <div class="check">
+                        <label for="check1">Estrenos de peliculas</label>
+                        <input type="checkbox" id="check1" name="check1" value="pelicula">
+                        <br>
+                        <label for="check2">Estrenos de series</label>
+                        <input type="checkbox" id="check2" name="check2" value="series">
+                        <br>
+                        <label for="check3">Novedades de los actores</label>
+                        <input type="checkbox" id="check3" name="check3" value="actores">
+                        <br>
+                        <label for="check4">Novedades de las plataformas</label>
+                        <input type="checkbox" id="check4" name="check4" value="paltaforma">                            
+                    </div>
+                </fieldset>
+                <br>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </div>
+             
+            </fieldset>
+        </form>
+    </Section>
+    <!-- FIN DE SECCION PRINCIPAL -->
+    <!-- COMIENZO DEL FOOTER -->
+    <footer>
+        <section class="pie">
+            <p>&copy 2022 Ricardo Javier Fernandez</p>
+            <a href="#top">Ir arriba</a>
+        </section>        
+        <aside class="pie_contacto">
+            <ul>
+                <li><a href="../pages/Newsletter.html">Suscribete a nuestro Newsletter</a></li>
+                <li><a href="../pages/contacto.html">Contactate con nosotros</a></li>
+            </ul>
+        </aside>
+        <aside class="pie_redes">
+            <h1>Siguenos en nuestras redes sociales</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../Images/logofacebook.webp" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../Images/logointa.webp" alt="logo instagram"></a></li>
+                    <li><a href="https://twitter.com/?lang=es"target="_blank"><img src="../Images/logotwitter.webp" alt="logo twitter"></a></li>
+                </ul>
+        </aside>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+</body>
+</html>
