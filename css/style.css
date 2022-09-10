@@ -146,6 +146,15 @@ header{
     flex-wrap: nowrap;
     background-color: #ffff55;
 }
+.carrusel img:active{
+    transform: scale(2,2);
+    z-index: 2;
+    padding: 10px;
+    border: #000000 solid 3px;
+    border-radius: 20%;
+    background-color: #ffffd5;
+    margin:10%;
+}
 
 .carrusel figure{
     border:#0a0a0a solid;
