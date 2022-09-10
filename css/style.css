@@ -16,7 +16,7 @@
 }
 header{
     grid-area: header;
-    background-color: aqua;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -54,6 +54,13 @@ header{
     text-align: center;
     
     
+}
+.barra_menu ul li:hover{
+    background-color: #f10303;
+}
+.barra_menu ul li a:hover{
+    font-size: 25px;
+    font-weight: bold;
 }
 .barra_menu ul li a{
     text-decoration: none;
@@ -343,6 +350,7 @@ img {
     max-width: 100%;
     height: auto;
   }
+
 
 @media screen and (min-width: 481px){
     #saludo{
