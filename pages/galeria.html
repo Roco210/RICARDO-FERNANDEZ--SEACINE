@@ -3,25 +3,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="shortcut icon" href="../Images/Logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <title>Galeria</title>
 </head>
 <body>
     <!-- iNICIO DE ENCABEZADO -->
-    <header id="top">
-        <a href="../index.html"><img class="top__logo" src="../Images/Logo.png" alt="Logo"></a>
-        <nav class="barra_menu">
-             <ul class="menu">
-                <li><A HREF="../index.html">INICIO </A></li>
-                <li><a href="../pages/estrenos.html">ESTRENOS</a></li>
-                <li><a href="../pages/galeria.html">GALERIA</a></li>
-                <li><a href="../pages/bandasonora.html">BANDA SONORA</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
+    <header >
+    <div class="d-flex justify-content-between">
+        <div class="logo m-3">
+            <a href="../index.html">
+                <img class="top__logo" src="../Images/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn m-2 btn-outline-secondary">
+                            <a class="nav-link" aria-current="page" HREF="../index.html">INICIO </A>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn  m-2 btn-outline-secondary">
+                            <a class="nav-link" href="../pages/estrenos.html">ESTRENOS</a>
+                        </button>                    
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn  m-2 btn-outline-secondary">
+                            <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn  m-2 btn-outline-secondary">
+                            <a class="nav-link" href="../pages/bandasonora.html">BANDA SONORA</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn  m-2 btn-outline-secondary">
+                            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
-    <!-- FIN DEL ENCABEZADO -->
+    </div>
+</header>
+<!-- FIN DEL ENCABEZADO --> 
     <!-- INICIO DE SECCION PRINCiPAL -->
     <div class="fondo">
         <h1 class="encabezado">Galeria Thor: Amor y trueno</h1>
@@ -42,25 +75,38 @@
     </div>
     <!-- FIN DE SECCION PRINCIPAL -->
     <!-- COMIENZO DEL FOOTER -->
-    <footer>
-        <section class="pie">
+    <footer class="d-flex justify-content-between">
+        <div class="pie mx-5">
             <p>&copy 2022 Ricardo Javier Fernandez</p>
             <a href="#top">Ir arriba</a>
-        </section>        
-        <aside class="pie_contacto">
+        </div>
+        <div class="pie_contacto d-flex justify-content-center ">
             <ul>
-                <li><a href="../pages/Newsletter.html">Suscribete a nuestro Newsletter</a></li>
-                <li><a href="../pages/contacto.html">Contactate con nosotros</a></li>
+                <li>
+                    <a href="../pages/Newsletter.html">Suscribete a nuestro Newsletter</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contactate con nosotros</a>
+                </li>
             </ul>
-        </aside>
-        <aside class="pie_redes">
+        </div>
+        <div class="pie_redes ">
             <h1>Siguenos en nuestras redes sociales</h1>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../Images/logofacebook.webp" alt="logo facebook"></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../Images/logointa.webp" alt="logo instagram"></a></li>
-                    <li><a href="https://twitter.com/?lang=es"target="_blank"><img src="../Images/logotwitter.webp" alt="logo twitter"></a></li>
-                </ul>
-        </aside>
+            <ul class="d-flex justify-content-evenly">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../Images/logofacebook.webp" alt="logo facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../Images/logointa.webp" alt="logo instagram"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../Images/logotwitter.webp" alt="logo twitter"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
     <!-- FIN DEL FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </body>
