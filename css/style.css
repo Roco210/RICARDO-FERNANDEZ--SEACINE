@@ -111,166 +111,28 @@ footer .pie{
 .carousel-inner img{
     max-height: 432px;
 }
-
-@media screen and (min-width: 480px){
-    #saludo{
-        background-size: contain;
-    }
-    .notaPrincipal iframe{
-        width: 53rem;
-        height: 30rem;
-        
-    }
-}
-
-
-/* 
-
-#carouselExampleCaptions{
-    height: 5fr;
-    flex-wrap: nowrap;
-    background-color: #ffff55;
-}
-.carrusel img:active{
-    transform: scale(2,2);
-    z-index: 2;
-    padding: 10px;
-    border: #000000 solid 3px;
-    border-radius: 20%;
-    background-color: #ffffd5;
-    margin:10%;
-}
-
-.carrusel figure{
-    border:#0a0a0a solid;
-    margin:10px;
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 0%;
-
-}
-
-footer{
-    display: grid;
-    grid-area: footer;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 70px 1fr;
-    align-items: center;
-    text-align: center;
-}
-.pie{
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-.pie_contacto{
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-footer a{
-    text-decoration: none;
-    color: #000000;
-}
-footer li{
-    list-style: none;
-}
-footer .pie{
-    font-weight: bold;
-}
-footer .pie_contacto ul{
-    top:10px;
-   
-}
-.pie_contacto li{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
-}
-
-footer .pie_redes{
-    font-weight: bold;
-    top: 0px;
-    margin: 0px;
-}
-footer .pie_redes li{
-    padding: 0px;
-    margin:0px;
-}
-
-.estrenos{
-    display:grid;
-    grid-template-areas:
-    "header"
-    "saludo"
-    "estrenomes"
-    "articulo1"
-    "articulo2"
-    "footer";
-    grid-template-columns:auto;
-    grid-template-rows: auto auto auto auto 1fr;
-}
 #estreno_mes{
-    grid-area: estrenomes;
+    margin: 10px;
     border:#000000 solid;
     padding:5px;
-    margin: 10px;
 }
-.articulo1{
-    grid-area: articulo1;
-}
-.articulo2{
-    grid-area: articulo2;
-}
+
 article{
-    display: flex;
+    display:flex;
     flex-direction: column;
-    justify-content: space-between; 
-    height: auto;
+    justify-content: space-between;
     margin: 10px;
     border:#000000 solid;
     padding:5px;}
-#estreno_mes .reseña{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-#estrenos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-}
-
-.galeria{
-    display:flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-.galeria img{
-    height: 100%;
+    .galeria{
+        display:flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+.listas iframe{
     width: 100%;
-    margin:0px;
-    padding: 0px;
+    height: 300px;
 }
-.galeria img:hover{
-    transform: scale(1.5,1.5);
-}
-
-img{
-    max-width: 30%;
-    max-height: 300px;
-    margin:10px;
-    
-}
-.banda{
-    margin:10px 10% 10px 10%;
-    width:80%;
-    height: 380px;
-    border:0px;
-}
-
-
 .formulario{
     display:flex;
     flex-direction: column;
@@ -326,6 +188,51 @@ legend{
     margin:20px 0px 20px 0px;
     padding: 5px;
 }
+@media screen and (min-width: 480px){
+    #saludo{
+        background-size: contain;
+    }
+    .notaPrincipal iframe{
+        width: 53rem;
+        height: 30rem;
+    }
+    #estreno_mes iframe{
+        width: 100%;
+        height: 50rem;
+    }
+    
+    #estrenos article iframe{
+        width: 100%;
+        height: 25rem;
+    }
+    .msj textarea{
+        width: 480px;
+    }
+
+}
+@media screen and (min-width: 1000px){
+    #estrenos{
+        display: flex;
+        flex-wrap:wrap;
+        
+    }
+    #estrenos article{
+        width: 48%;
+    }
+    .msj textarea{
+        width: 1080px;
+    }
+    .direccion{
+        flex-direction: row;
+    }
+    .direccion iframe{
+        width: 60%;
+}
+
+/* 
+
+
+
 #newsletter .reseña{
     text-align: center;
     font-weight: bold;
@@ -394,9 +301,7 @@ legend{
         display: flex;
         justify-content: space-around;
     }
-    .msj textarea{
-        width: 480px;
-    }
+    
 
 }
 
@@ -437,14 +342,7 @@ legend{
     footer{
         z-index: 1;
     }
-    .msj textarea{
-        width: 1080px;
-    }
-    .direccion{
-        flex-direction: row;
-    }
-    .direccion iframe{
-        width: 60%;
+    
     }
 }
      */
