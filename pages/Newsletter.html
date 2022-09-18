@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Images/Logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="..style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Newsletter</title>
 </head>
 <body>
@@ -67,42 +67,39 @@
         <form action="">
             <fieldset class="formulario">
                 <legend><b>Registrate</b></legend>
-
                 <div class="id">
                     <label for="nombre">NOMBRE:</label>
                     <input id= nombre type="text" placeholder="NOMBRE">
                     <label for="apellido" >APELLIDO:</label>
                     <input id=apellido type="text" placeholder="APELLIDO">
-
                 </div>
                 <div class="correo">
                     <label for="email">CORREO ELECTORNICO:</label>
                     <input id="email"type="email" placeholder="CORREO ELECTRONICO">    
                 </div>
                 <br>
-                <fieldset class="contenedor">
-                    <legend><b>¿Que informacion te gustaria recibir?</b></legend> 
+            <fieldset class="contenedor">
+                <legend><b>¿Que informacion te gustaria recibir?</b></legend> 
+                <br>
+                <div class="check">
+                    <label for="check1">Estrenos de peliculas</label>
+                    <input type="checkbox" id="check1" name="check1" value="pelicula">
                     <br>
-                    <div class="check">
-                        <label for="check1">Estrenos de peliculas</label>
-                        <input type="checkbox" id="check1" name="check1" value="pelicula">
-                        <br>
-                        <label for="check2">Estrenos de series</label>
-                        <input type="checkbox" id="check2" name="check2" value="series">
-                        <br>
-                        <label for="check3">Novedades de los actores</label>
-                        <input type="checkbox" id="check3" name="check3" value="actores">
-                        <br>
-                        <label for="check4">Novedades de las plataformas</label>
-                        <input type="checkbox" id="check4" name="check4" value="paltaforma">                            
-                    </div>
-                </fieldset>
+                    <label for="check2">Estrenos de series</label>
+                    <input type="checkbox" id="check2" name="check2" value="series">
+                    <br>
+                    <label for="check3">Novedades de los actores</label>
+                    <input type="checkbox" id="check3" name="check3" value="actores">
+                    <br>
+                    <label for="check4">Novedades de las plataformas</label>
+                    <input type="checkbox" id="check4" name="check4" value="paltaforma">                            
+                </div>
+            </fieldset>
                 <br>
                 <div class="boton">
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Cancelar">
-                </div>
-             
+                </div>          
             </fieldset>
         </form>
     </Section>

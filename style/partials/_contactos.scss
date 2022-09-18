@@ -1,0 +1,79 @@
+.formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    text-align: center;
+    legend{
+        text-align: center;
+        color:#000000;
+        font-size: 40px;
+    }
+    .id{
+        margin:20px;
+    }
+    .correo{
+        margin: 20px;
+    }
+    .msj{
+        display:flex;
+        flex-direction:column;
+        textarea{
+            height: 250px;
+        
+        }
+    }
+    .boton{
+        margin:20px 0px 20px 0px;
+        input{
+            height: 50px;
+            width: 130px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+#newsletter{
+    text-align: center;
+}
+
+.direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin: 20px;
+    text-align: center;
+}
+.contenedor{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    .check{
+        margin:20px 0px 20px 0px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .msj {
+        textarea{
+            width: 480px;
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+    .msj {
+        textarea{
+        width: 1080px;
+        }
+    }
+    .direccion{
+        flex-direction: row;
+        iframe{
+            width: 60%;
+        }
+    }
+}

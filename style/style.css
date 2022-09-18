@@ -6,37 +6,18 @@ header {
 header .logo img {
   height: 100px;
 }
-header .btn {
+header .navbar .navbar-toggler {
   background-color: #ffffd5;
 }
-header .nav-link {
-  font-weight: bold;
-}
-header .barra_menu ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-}
-header .barra_menu ul li {
-  margin: 5px;
-  padding: 10px;
-  border: #000000 solid;
-  border-radius: 10px;
-  padding: 10px;
+header .navbar .btn {
   background-color: #ffffd5;
-  text-align: center;
+  transition: all 1s;
 }
-header .barra_menu ul lihover {
+header .navbar .btn:hover {
   background-color: #f10303;
+  transform: scale(1.2, 1.2);
 }
-header .barra_menu ul li a {
-  text-decoration: none;
-  color: #000000;
-}
-header .barra_menu ul li ahover {
-  font-size: 25px;
+header .navbar .nav-link {
   font-weight: bold;
 }
 
@@ -50,18 +31,21 @@ header .barra_menu ul li ahover {
 }
 
 #saludo {
-  height: 480px;
-  justify-content: center;
-  text-align: center;
-  padding-top: 100px;
-  font-size: 30px;
+  height: 280px;
+  font-size: 40px;
   font-weight: bold;
+  text-align: center;
   background-image: url(../Images/fondobienvenida.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: repeat;
 }
-#saludo p {
+#saludo .parallax {
+  margin-bottom: 5px;
+}
+#saludo .parallax p {
   color: #000000;
+  transform: translateY(50px);
 }
 
 .principal {
@@ -71,26 +55,6 @@ header .barra_menu ul li ahover {
   background-color: #ffffd5;
   display: flex;
   flex-direction: column;
-}
-.principal .notaPrincipal .encabezado {
-  font-size: 40px;
-  border: #ffff55 solid 5px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 10px 0px 10px 0px;
-}
-.principal .notaPrincipal .video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-.principal .notaPrincipal .video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 .principal .notaPrincipalEstreno .reseña {
   color: #000000;
@@ -118,19 +82,29 @@ header .barra_menu ul li ahover {
   display: block;
 }
 
+.encabezado {
+  font-size: 40px;
+  border: #ffff55 solid 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+
 .carousel-inner img {
   max-height: 432px;
 }
 
 @media screen and (min-width: 480px) {
   #saludo {
-    background-size: contain;
+    height: 480px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .principal .notaPrincipal .video {
-    padding-bottom: 460px;
-    margin: 0px 20% 0 20%;
+  #saludo .parallax {
+    background-image: url(../Images/fondobienvenida.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 footer {
@@ -195,4 +169,133 @@ footer .pie_redes li {
   footer {
     z-index: 1;
   }
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .video {
+    padding-bottom: 460px;
+    margin: 0px 20% 0 20%;
+  }
+}
+#estreno_mes {
+  border: #000000 solid;
+  padding: 5px;
+  margin: 10px;
+}
+
+#estrenos {
+  margin-top: 5px;
+}
+#estrenos .notaSecundaria {
+  border: #000000 solid;
+  padding: 5px;
+}
+
+@media screen and (min-width: 961px) {
+  #estrenos {
+    display: flex;
+  }
+  #estrenos .notaSecundaria {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #estrenos .notaSecundaria .video {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  text-align: center;
+}
+.formulario legend {
+  text-align: center;
+  color: #000000;
+  font-size: 40px;
+}
+.formulario .id {
+  margin: 20px;
+}
+.formulario .correo {
+  margin: 20px;
+}
+.formulario .msj {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .msj textarea {
+  height: 250px;
+}
+.formulario .boton {
+  margin: 20px 0px 20px 0px;
+}
+.formulario .boton input {
+  height: 50px;
+  width: 130px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#newsletter {
+  text-align: center;
+}
+
+.direccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenedor .check {
+  margin: 20px 0px 20px 0px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 480px) {
+  .msj textarea {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .msj textarea {
+    width: 1080px;
+  }
+  .direccion {
+    flex-direction: row;
+  }
+  .direccion iframe {
+    width: 60%;
+  }
+}
+.galeria img:hover {
+  transition: all 1s;
+  transform: scale(1.5, 1.5);
+  height: 100%;
+  padding: 0px;
 }/*# sourceMappingURL=style.css.map */
