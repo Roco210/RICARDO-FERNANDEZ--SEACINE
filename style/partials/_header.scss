@@ -1,25 +1,27 @@
 header{
-    background-color: #f1f124;
+    background-color: $yellowhard;
     .logo {
         img{
             height: 100px;
+            &:hover{
+                transform: scale($grow1,$grow1);
+            }
         }
     }
     .navbar{
         .navbar-toggler{
-            background-color: #ffffd5;
+            background-color: $backgroudsoft;
         }
         .btn{
-            background-color: #ffffd5;
+            background-color:$backgroudsoft;
             transition: all 1s;
             &:hover{
                 background-color: #f10303;
-                transform: scale(1.2,1.2);
+                transform: scale($grow1,$grow1);
         }
         }
         .nav-link{
             font-weight: bold;
-            
         }
     }
 }
