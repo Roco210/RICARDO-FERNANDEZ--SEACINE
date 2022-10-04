@@ -4,21 +4,22 @@ header{
         img{
             height: 100px;
             &:hover{
+                @extend %efecto;
                 transform: scale($grow1,$grow1);
             }
         }
     }
     .navbar{
         .navbar-toggler{
-            background-color: $backgroudsoft;
+            background-color: map-get($color,backgroudsoft);
         }
         .btn{
             background-color:$backgroudsoft;
             transition: all 1s;
             &:hover{
-                background-color: #f10303;
+                background-color: map-get($color,rojoboton);
                 transform: scale($grow1,$grow1);
-        }
+            }
         }
         .nav-link{
             font-weight: bold;

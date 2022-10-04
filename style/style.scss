@@ -1,4 +1,7 @@
-@import "./partials/_variables.scss";
+@import "./partials/maps";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/extend";
 @import "./partials/header";
 @import "./partials/index";
 @import "./partials/footer";

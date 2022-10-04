@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+.galeria img:hover, header .logo img:hover {
+  transition: all 1s;
+  transform: scale(1.5, 1.5);
+  padding: 0px;
+}
+
 header {
   background-color: #fccf3a;
 }
@@ -87,7 +93,7 @@ header .navbar .nav-link {
 
 .encabezado {
   font-size: 40px;
-  border: #ffff55 solid 5px;
+  border: #fccf3a solid 5px;
   border-radius: 10px;
   text-align: center;
   margin: 10px 0px 10px 0px;
@@ -292,8 +298,5 @@ footer .pie_redes li {
   }
 }
 .galeria img:hover {
-  transition: all 1s;
-  transform: scale(1.5, 1.5);
   height: 100%;
-  padding: 0px;
 }/*# sourceMappingURL=style.css.map */

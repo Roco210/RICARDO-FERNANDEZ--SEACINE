@@ -50,17 +50,17 @@
     margin-bottom: 10px;
     a{
         text-decoration-line: underline;
-        text-decoration-color:$yellowhard;
+        text-decoration-color:map-get($color,yellowhard );
         color: $yellowhard;
         display: block;
     }
 }
 .encabezado{
     font-size: 40px;
-    border: #ffff55 solid 5px;
+    border: map-get($color,yellowhard ) solid 5px;
     border-radius: 10px;
     text-align:center;
-    margin:10px 0px 10px 0px;
+    margin:10px 0px 10px 0px;   
 }
 .carousel-inner img{
     max-height: 432px;
