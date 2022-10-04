@@ -1,10 +1,5 @@
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffd5;
+    @include footer_($backcolor:#ffffd5);
     .pie{
         display: flex;
         flex-direction: column;
@@ -56,10 +51,5 @@ footer{
     .pie_redes ul{
         display: flex;
         justify-content: space-around;
-    }
-}
-@media screen and (min-width: 1200px){
-    footer{
-        z-index: 1;
     }
 }
