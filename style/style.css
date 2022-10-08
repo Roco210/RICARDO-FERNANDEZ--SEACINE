@@ -236,19 +236,6 @@ footer .pie_redes li {
   color: #000000;
   font-size: 40px;
 }
-.formulario .id {
-  margin: 20px;
-}
-.formulario .correo {
-  margin: 20px;
-}
-.formulario .msj {
-  display: flex;
-  flex-direction: column;
-}
-.formulario .msj textarea {
-  height: 250px;
-}
 .formulario .boton {
   margin: 20px 0px 20px 0px;
 }
@@ -287,9 +274,6 @@ footer .pie_redes li {
   }
 }
 @media screen and (min-width: 1000px) {
-  .msj textarea {
-    width: 1080px;
-  }
   .direccion {
     flex-direction: row;
   }
