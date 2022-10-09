@@ -101,6 +101,7 @@ header .navbar .nav-link {
 
 .carousel-inner img {
   max-height: 432px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
