@@ -1,0 +1,44 @@
+.dark{
+    background-color: $dark;
+    .fondo{
+        background-color: $darkSoft;
+    }
+    #saludo{
+        height: auto;
+        color:$darkFont;
+        background-color: $darkSoft;
+        background-image: none;
+    }
+    
+    .principal {
+        color: $darkFont;
+        .notaPrincipal{
+            background-color: $darkSoft;
+        }
+        .notaPrincipalEstreno{
+            .reseña{
+                color:#ffffff;
+            }
+        }
+        }
+    .titulo{
+        color:$darkFont;
+        background-color: $darkSoft;
+        border: $darkBorder solid;
+        a{
+            text-decoration-color:$darkFont;
+            color: $darkFont;
+        }
+    }
+    .encabezado{
+        color: $darkFont;
+        border: $darkBorder solid;  
+        margin-top: 0px;
+    }
+    #estreno_mes{
+        background-color: $darkSoft;
+        margin-top: 0px;
+    }
+}
+
+

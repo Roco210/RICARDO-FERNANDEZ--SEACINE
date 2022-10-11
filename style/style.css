@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-.galeria img:hover, header .logo img:hover {
+.Galeria img:hover, header .logo img:hover {
   transition: all 1s;
   transform: scale(1.5, 1.5);
   padding: 0px;
@@ -282,6 +282,47 @@ footer .pie_redes li {
     width: 60%;
   }
 }
-.galeria img:hover {
+.dark {
+  background-color: #3d3b3b;
+}
+.dark .fondo {
+  background-color: #535151;
+}
+.dark #saludo {
+  height: auto;
+  color: #ff0000;
+  background-color: #535151;
+  background-image: none;
+}
+.dark .principal {
+  color: #ff0000;
+}
+.dark .principal .notaPrincipal {
+  background-color: #535151;
+}
+.dark .principal .notaPrincipalEstreno .reseña {
+  color: #ffffff;
+}
+.dark .titulo {
+  color: #ff0000;
+  background-color: #535151;
+  border: #ffffff solid;
+}
+.dark .titulo a {
+  -webkit-text-decoration-color: #ff0000;
+          text-decoration-color: #ff0000;
+  color: #ff0000;
+}
+.dark .encabezado {
+  color: #ff0000;
+  border: #ffffff solid;
+  margin-top: 0px;
+}
+.dark #estreno_mes {
+  background-color: #535151;
+  margin-top: 0px;
+}
+
+.Galeria img:hover {
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
