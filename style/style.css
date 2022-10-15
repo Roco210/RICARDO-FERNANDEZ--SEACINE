@@ -129,6 +129,7 @@ footer .pie {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  margin-top: 0px;
 }
 footer .pie_contacto {
   display: flex;
@@ -256,6 +257,7 @@ footer .pie_redes li {
   flex-direction: column;
   justify-content: space-around;
   margin: 20px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
