@@ -41,8 +41,6 @@ header .navbar .nav-link {
 
 #saludo {
   height: 280px;
-  font-size: 40px;
-  font-weight: bold;
   text-align: center;
   background-image: url(../Images/fondobienvenida.jpg);
   background-position: center;
@@ -52,9 +50,11 @@ header .navbar .nav-link {
 #saludo .parallax {
   margin-bottom: 5px;
 }
-#saludo .parallax p {
+#saludo .parallax h1 {
   color: #000000;
+  font-size: 80px;
   transform: translateY(50px);
+  font-weight: bold;
 }
 
 .principal {
@@ -80,6 +80,7 @@ header .navbar .nav-link {
   border: #fccf3a solid;
   border-radius: 10px;
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .titulo a {
@@ -129,7 +130,6 @@ footer .pie {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  margin-top: 0px;
 }
 footer .pie_contacto {
   display: flex;
@@ -287,6 +287,9 @@ footer .pie_redes li {
 .dark {
   background-color: #3d3b3b;
 }
+.dark * p {
+  color: #ffffff;
+}
 .dark .fondo {
   background-color: #535151;
 }
@@ -323,6 +326,15 @@ footer .pie_redes li {
 .dark #estreno_mes {
   background-color: #535151;
   margin-top: 0px;
+}
+.dark footer {
+  background-color: #535151;
+}
+.dark footer a {
+  color: #ffffff;
+}
+.dark footer .pie_redes {
+  color: #ffffff;
 }
 
 .Galeria img:hover {

@@ -1,4 +1,7 @@
 .dark{
+    *p{
+        color: $darkWhite;
+    }
     background-color: $dark;
     .fondo{
         background-color: $darkSoft;
@@ -17,7 +20,7 @@
         }
         .notaPrincipalEstreno{
             .reseña{
-                color:#ffffff;
+                color:$darkWhite;
             }
         }
         }
@@ -39,6 +42,15 @@
         background-color: $darkSoft;
         margin-top: 0px;
     }
+    footer{
+        background-color: $darkSoft;
+        a{
+            color: $darkWhite;
+        } 
+        .pie_redes{
+            color: $darkWhite;
+        }
+    }   
 }
 
 
