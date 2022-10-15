@@ -2,10 +2,12 @@
     *p{
         color: $darkWhite;
     }
+    
     background-color: $dark;
     .fondo{
         background-color: $darkSoft;
     }
+    
     #saludo{
         height: auto;
         color:$darkFont;
@@ -51,6 +53,18 @@
             color: $darkWhite;
         }
     }   
+    .formulario{
+        legend{
+            color: $darkFont;
+        }
+    }
+    label{
+        color:$darkWhite
+    }
+    h2{
+        color: $darkWhite;
+    }
 }
+
 
 

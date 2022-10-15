@@ -336,6 +336,15 @@ footer .pie_redes li {
 .dark footer .pie_redes {
   color: #ffffff;
 }
+.dark .formulario legend {
+  color: #ff0000;
+}
+.dark label {
+  color: #ffffff;
+}
+.dark h2 {
+  color: #ffffff;
+}
 
 .Galeria img:hover {
   height: 100%;
